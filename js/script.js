@@ -1,19 +1,19 @@
 const locationApiUrl = 'https://api.open-meteo.com/v1/forecast?latitude=27.27&longitude=77.7777&current_weather=true';
 
 const weatherIcons = {
-    snow: '/assets/snow_icon.png',
-    rain: '/assets/rain_icon.png',
-    warm: '/assets/warm_icon.png',
-    hot: '/assets/hot_icon.png'
+    snow: './assets/snow_icon.png',
+    rain: './assets/rain_icon.png',
+    warm: './assets/warm_icon.png',
+    hot: './assets/hot_icon.png'
 };
 
 const timeIcons = {
-    day: '/assets/day_icon.png',
-    night: '/assets/night_icon.png'
+    day: './assets/day_icon.png',
+    night: './assets/night_icon.png'
 };
 
-const windIcon = '/assets/speed.png';
-const locationIcon = '/assets/map.png';
+const windIcon = './assets/speed.png';
+const locationIcon = './assets/map.png';
 
 fetch(locationApiUrl)
     .then(response => response.json())
